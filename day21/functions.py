@@ -30,16 +30,17 @@ def sq_to_str(sq0):
     return ''.join(sq0.flatten())
 
 def divvy(arr, dim):
-    # row, col of pieces both equal to dim = 2 or 3
-    # arr assumed square ndarray
+    # Input: square ndarray with dim multiple of 2 or 3
+    # Output: list of square ndarrays with dim = 2x2 or 3x3
     size = arr.shape[0]
     return list(arr.reshape(size//dim, dim, -1, dim)\
                    .swapaxes(1, 2)\
                    .reshape(-1, dim, dim))
 
 def reverse_divvy(list_):
-    # list of square ndarrays
-    # len of list also square
+    # Input: list of square ndarrays
+    # Assumption: len of list is a square number
+    # Output: single square ndarray
     arr = np.array(list_)
     dim = list_[0].shape[0]
     size = int(np.sqrt(len(list_))) * dim
