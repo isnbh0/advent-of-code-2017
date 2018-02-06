@@ -17,7 +17,6 @@ def main():
                 val = filtlist[-1] / mylist[idx]
                 break
             idx += 1
-        
         return val
 
 

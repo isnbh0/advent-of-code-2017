@@ -26,8 +26,6 @@ def main():
         
         count += 1
     
-    idces = seen.index(current)
-
     print(count)
 
 if __name__ == '__main__':

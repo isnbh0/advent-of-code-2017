@@ -3,17 +3,10 @@ sys.path.append('..')
 from get_input import get_input_by_lines
 
 import numpy as np
+from functions import init_stack
+
 
 def main():
-    def init_stack(ex13):
-        dict0 = dict()
-        for line in ex13:
-            idx, range_ = line.split(': ')
-            idx, range_ = int(idx), int(range_)
-            dict0[idx] = {'pos': 0, 'dir_': 'd',
-                          'range_': range_}
-        return dict0    
-
     ex13_0 = get_input_by_lines(13)
     ex13 = init_stack(ex13_0)
 

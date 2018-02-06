@@ -3,7 +3,7 @@ sys.path.append('..')
 from get_input import get_input_by_lines
 
 import numpy as np
-from classes import Particle, ParticleSet
+from classes import ParticleSet
 
 
 def main():

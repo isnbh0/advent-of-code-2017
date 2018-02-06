@@ -2,21 +2,12 @@ import sys
 sys.path.append('..')
 from get_input import get_input_by_lines
 
+from functions import reverse_list
+
 
 def main():
     ex10_0 = get_input_by_lines(10)
     ex10 = [int(x) for x in ex10_0[0].split(',')]
-
-    def reverse_list(list0, start_idx, rev_len):
-        list1 = list0.copy()
-        
-        end_idx = start_idx + rev_len - 1
-        
-        for idx in range(rev_len):
-            idx1 = (end_idx - idx) % len(list0)
-            idx0 = (start_idx + idx) % len(list0)
-            list1[idx1] = list0[idx0]
-        return list1
 
     curr_idx = 0
     skip_size = 0

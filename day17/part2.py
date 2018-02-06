@@ -21,7 +21,6 @@ def main():
             idx = (idx + ex17) % (count + 1) + 1
         else:
             idx = 1
-
         if idx == 1:
             recent = count+1
         count += 1
