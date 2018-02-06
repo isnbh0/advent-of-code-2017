@@ -3,7 +3,8 @@
 ### Run instructions
 
 1. Navigate into folder of choice (e.g. `./day01`)
-2. Run script with `python part1.py` or `python part2.py`
+2. Replace input text file accordingly (`prob1.txt`)
+3. Run script with `python part1.py` or `python part2.py`
 
 ---
 
