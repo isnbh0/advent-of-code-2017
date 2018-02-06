@@ -18,5 +18,11 @@
 
 ---
 
+#### Caveats
+* A few solutions originally involved manual calculation and thus include hardcoded components. For these, more generalizable solutions will be provided in the future.
+* Some solutions (day24 especially) are quite inefficient time-wise. I hope to improve these in future updates.
+
+---
+
 by John Choi (최정혁) 2018
 
