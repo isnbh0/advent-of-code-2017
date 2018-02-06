@@ -9,6 +9,9 @@ def get_input_by_lines(prob, strip=True):
         for line in prob_input:
             line = re.sub(r'\t', ',', line)
             if strip:
-                lines.append(line.strip())
+                line = line.strip()
+            else:
+                line = line[:-1]
+            lines.append(line)
     return lines
 
