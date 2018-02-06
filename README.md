@@ -7,8 +7,13 @@
 
 ---
 
-### Source website for problems
+#### Source website for problems
 [Advent of Code 2017](http://adventofcode.com/2017)
+
+---
+
+#### Dependencies
+[NumPy](http://www.numpy.org/) was the only notable non-builtin package used.
 
 ---
 
